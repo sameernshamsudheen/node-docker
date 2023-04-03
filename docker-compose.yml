@@ -8,6 +8,7 @@ services:
         - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
+    image: sam5890/node-docker-app
  
     environment:
       - PORT=3000
